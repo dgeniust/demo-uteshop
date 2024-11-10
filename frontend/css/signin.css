@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  border: border-box;
+  font-family: "Montserrat";
+}
+body {
+  background-image: url(/frontend/img/japan-bg.jpg);
+  background-size: cover;
+  /* backdrop-filter: blur(5px); */
+  /* background-position-y: 50%; */
+}
+.container { 
+  display: grid;
+  grid-template-columns:  repeat(2, 1fr);
+  place-items: center;
+  /* display: flex;
+  justify-content: space-around; */
+  align-items: center;
+  height: 100vh;
+}
+.container-form {
+  border: 1px solid black;
+  width: 400px;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.flex-column {
+  margin-top: 20px;
+}
+.text-container h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.inputForm {
+  border: 1.5px solid #ecedec;
+  border-radius: 10px;
+  height: 40px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: 0.2s ease-in-out;
+  justify-content: space-around;
+}
+input { 
+  width: 260px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  /* border: 1px solid rgba(211, 211, 211, 0.433); */
+  outline: none;
+  border: none;
+  font-style: 12px;
+}
+.input:focus {
+  outline: none;
+  /* background-color: gray; */
+  background-color: #FEF9F2;
+}
+.inputForm:hover {
+  border: 1.5px solid gray;
+}
+.inputForm:focus-within {
+  border: 1.5px solid gray;
+}
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-container { 
+  margin-top: 20px;
+}
+/* BUTTON SIGN UP */
+.btn {
+  border: none;
+  width: 330px;
+  height: 40px;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+/* END BUTTON SIGN UP */
+.login-form {
+  margin-top: 10px;
+}
+.login-form a {
+  text-decoration: none;
+  color: #1C1A1C;
+  font-weight: bold;
+}
+.login-form a:hover {
+  color: #273c75;
+  text-decoration: underline;
+}
+.or{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.line{
+  width: 150px;
+  height: 0.5px;
+  background-color: gray;
+  margin: 0 auto;
+}
+.other{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.social-media a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/* SOCIAL ICON START */
+/* From Uiverse.io by david-mohseni */ 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  /* padding-top: 40px; */
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .google:hover,
+.wrapper .google:hover .tooltip,
+.wrapper .google:hover .tooltip::before {
+  background: #9EDF9C;
+  color: white;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+
+/* SOCIAL ICON END */
+.container-slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-slogan p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Noto Sans Japanese';
+  color: white;
+}

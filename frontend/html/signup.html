@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/frontend/css/signup.css">
 </head>
 <body>
     <div class="signup-container">
@@ -12,14 +13,22 @@
             <div class="container-image">
                 <div class="container-slogan">
                     <!-- <h1>Welcome to UTEShop</h1> -->
-                    <p>ベトナム</p>
+                    <p data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" >ベトナム</p>
                 </div>
-                <img src="/frontend/img/japan-house-bg-form.png" alt="" width="600px" height="600px">
+                <img src="/frontend/img/bg-japan-signup.png" alt="" width="600px" height="600px"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500" >
             </div>
-            <div class="container-form">
+            <div class="container-form" 
+                data-aos="fade-left"
+                data-aos-easing="linear"
+                data-aos-duration="1500" >
                 <form action="" class="form">
                     <div class="text-container">
-                        <h1>Join with us</h1>
+                        <h1>Sign Up</h1>
                     </div>
                     <div class="input-container">
                         <div class="flex-column">
@@ -53,14 +62,14 @@
                         </button>
                         <div class="login-form">
                             <span>Already have an account ?</span>
-                            <a href="/frontend/html/login.html">Login!</a>
+                            <a href="/frontend/html/signin.html">Sign In!</a>
                         </div>
                         <div class="or">
                             <div class="line"></div>
                             <span>or</span>
                             <div class="line"></div>
                         </div>
-                        <span class="other">Use your social to connect</span>
+                        <span class="other">Sign up with your social</span>
                         <div class="social-media">
                             <a href="">
                                 <div class="wrapper">
@@ -136,5 +145,9 @@
         </div>
     </div>
     <script src="/frontend/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
