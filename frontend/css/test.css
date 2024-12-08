@@ -527,7 +527,7 @@ a{
 /* End Section 3 */
 
 /* From Uiverse.io by gharsh11032000 */ 
-.menu-shop {
+.menu-user-shop {
   font-size: 16px;
   line-height: 1.6;
   color: #000000;
@@ -536,7 +536,7 @@ a{
   list-style: none;
 }
 
-.menu-shop a {
+.menu-user-shop a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
@@ -544,7 +544,7 @@ a{
   line-height: inherit;
 }
 
-.menu-shop .link-shop {
+.menu-user-shop .link-shop {
   position: relative;
   display: flex;
   align-items: center;
@@ -556,7 +556,7 @@ a{
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.menu-shop .link-shop::after {
+.menu-user-shop .link-shop::after {
   content: "";
   position: absolute;
   top: 0;
@@ -570,18 +570,18 @@ a{
   transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.menu-shop .link-shop svg {
+.menu-user-shop .link-shop svg {
   width: 14px;
   height: 14px;
   fill: #000000;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.menu-shop .item-shop {
+.menu-user-shop .item-shop {
   position: relative;
 }
 
-.menu-shop .item-shop .submenu-shop {
+.menu-user-shop .item-shop .submenu-user-shop {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -601,7 +601,7 @@ a{
   list-style: none;
 }
 
-.menu-shop .item-shop:hover .submenu-shop {
+.menu-user-shop .item-shop:hover .submenu-user-shop {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -610,27 +610,27 @@ a{
   border-color: #0a3cff;
 }
 
-.menu-shop .item-shop:hover .link {
+.menu-user-shop .item-shop:hover .link {
   color: #ffffff;
   border-radius: 16px 16px 0 0;
 }
 
-.menu-shop .item-shop:hover .link-shop::after {
+.menu-user-shop .item-shop:hover .link-shop::after {
   transform: scaleX(1);
   transform-origin: right;
 }
 
-.menu-shop .item-shop:hover .link-shop svg {
+.menu-user-shop .item-shop:hover .link-shop svg {
   fill: #ffffff;
   transform: rotate(-180deg);
 }
 
-.submenu-shop .submenu-item-shop {
+.submenu-user-shop .submenu-user-item-shop {
   width: 100%;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.submenu-shop .submenu-link-shop {
+.submenu-user-shop .submenu-user-link-shop {
   display: block;
   padding: 12px 24px;
   width: 100%;
@@ -639,11 +639,11 @@ a{
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.submenu-shop .submenu-item-shop:last-child .submenu-link-shop {
+.submenu-user-shop .submenu-user-item-shop:last-child .submenu-user-link-shop {
   border-bottom: none;
 }
 
-.submenu-shop .submenu-link-shop::before {
+.submenu-user-shop .submenu-user-link-shop::before {
   content: "";
   position: absolute;
   top: 0;
@@ -657,11 +657,126 @@ a{
   transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.submenu-shop .submenu-link-shop:hover:before {
+.submenu-user-shop .submenu-user-link-shop:hover:before {
   transform: scaleX(1);
   transform-origin: right;
 }
 
-.submenu-shop .submenu-link-shop:hover {
+.submenu-user-shop .submenu-user-link-shop:hover {
   color: #ffffff;
+}
+.fa-cart-shopping{
+  margin-right: 100px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ffccbc;
+}
+
+.action-user {
+  position: fixed;
+}
+
+.action-user .profile {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.action-user .profile img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.action-user .menu-user {
+  position: absolute;
+  top: 120px;
+  right: -10px;
+  padding: 10px 20px;
+  background: #fff;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.action-user .menu-user.active {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.action-user .menu-user::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.action-user .menu-user h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5em;
+}
+
+.action-user .menu-user h3 span {
+  font-size: 14px;
+  color: #cecece;
+  font-weight: 300;
+}
+
+.action-user .menu-user ul li {
+  list-style: none;
+  padding: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+.action-user .menu-user ul li svg {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.action-user .menu-user ul li:hover img {
+  opacity: 1;
+}
+
+.action-user .menu-user ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.action-user .menu-user ul li:hover a {
+  color: #ff5d94;
+}
+.menu-user ul li svg {
+  width: 20px;
 }
