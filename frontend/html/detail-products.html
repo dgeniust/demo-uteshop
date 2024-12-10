@@ -102,42 +102,214 @@
         </div>
     </nav>
     <section class="section-1">
-        <div class="left-s1">
-            <div class="img-product">
-                <div class="list">
-                    <div class="item">
-                        <img src="/frontend/img/g1.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="/frontend/img/g2.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="/frontend/img/g3.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="/frontend/img/g4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="button">
-                    <button id="prev"><i class="fas fa-chevron-left"></i></button>
-                    <button id="next"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <ul class="dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="show-img-product">
-                <img class="show-img" src="/frontend/img/g1.jpg" alt="" onclick="ShowImg(1)">
-                <img class="show-img" src="/frontend/img/g2.jpg" alt="" onclick="ShowImg(2)">
-                <img class="show-img" src="/frontend/img/g3.jpg" alt="" onclick="ShowImg(3)">
-                <img class="show-img" src="/frontend/img/g4.jpg" alt="" onclick="ShowImg(4)">
-            </div>
+        <div class="back-home-btn">
+            <button class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <p>Back To Home</p>
+            </button>
         </div>
-        <div class="right-s1">
-
+        <div class="product-s1">
+            <div class="left-s1">
+                <div class="title">
+                    <h1>MG 1/100 Gundam Astray Red Frame</h1>
+                </div>
+                <div class="left-img-s1">
+                    <div class="img-product">
+                        <div class="list">
+                            <div class="item">
+                                <img src="/frontend/img/g1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="/frontend/img/g2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="/frontend/img/g3.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="/frontend/img/g4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                            <button id="next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <ul class="dots">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="show-img-product">
+                        <img class="show-img" src="/frontend/img/g1.jpg" alt="" onclick="ShowImg(1)">
+                        <img class="show-img" src="/frontend/img/g2.jpg" alt="" onclick="ShowImg(2)">
+                        <img class="show-img" src="/frontend/img/g3.jpg" alt="" onclick="ShowImg(3)">
+                        <img class="show-img" src="/frontend/img/g4.jpg" alt="" onclick="ShowImg(4)">
+                    </div>
+                </div>
+            </div>
+            <div class="right-s1">
+                <div class="review-product-s1">
+                    <h3>Read Expert Reviews</h3>
+                    <p>Let's read what the experts have to say about this product so you can make the right recommendation</p>
+                    <button class="btn-review">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="buying">
+                    <!-- <div class="rating-number">
+                        <div class="star">
+                            <div class="radio">
+                            <input id="rating-5" type="radio" name="rating" value="5" />
+                            <label for="rating-5" title="5 stars">
+                                <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                                </svg>
+                            </label>
+    
+                            <input id="rating-4" type="radio" name="rating" value="4" />
+                            <label for="rating-4" title="4 stars">
+                                <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                                </svg>
+                            </label>
+    
+                            <input id="rating-3" type="radio" name="rating" value="3" />
+                            <label for="rating-3" title="3 stars">
+                                <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                                </svg>
+                            </label>
+    
+                            <input id="rating-2" type="radio" name="rating" value="2" />
+                            <label for="rating-2" title="2 stars">
+                                <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                                </svg>
+                            </label>
+    
+                            <input id="rating-1" type="radio" name="rating" value="1" />
+                            <label for="rating-1" title="1 star">
+                                <svg viewBox="0 0 576 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                                ></path>
+                                </svg>
+                            </label>
+                            </div>
+                            <div class="radio-content">
+                                <p>(đánh giá)</p>
+                                <div class="number-of-selling">| 26 đã bán</div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="status">
+                        <ul class="availabe-items">
+                            <li>97 items available</li>
+                        </ul>
+                        <ul class="waiting-items">
+                            <li>waiting line</li>
+                        </ul>
+                        <ul class="closed-items">
+                            <li>out of stock</li>
+                        </ul>
+                    </div>
+                    <div class="price">
+                        <span class="real-price" style="display: none;">1.500.000 VND</span>
+                        <span class="discount-price">1.000.000 VND</span>
+                        
+                        <div class="quantity">
+                            <button class="minus" aria-label="Decrease">&minus;</button>
+                            <input type="number" class="input-box" value="1" min="1" max="10">
+                            <button class="plus" aria-label="Increase">&plus;</button>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-buy">
+                        <button class="btn-buy-product">Mua ngay</button>
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li>Series: Best Mecha Collection</li>
+                            <li>Tỉ lệ: 1/144</li>
+                            <li>Hàng chính hãng Bandai (Nhật Bản)</li>
+                        </ul>
+                    </div>
+                    <br>    <hr width="150px">
+                    <div class="code-product">
+                        <p>Mã: BMCRX-78-2</p>
+                    </div>
+                    <hr width="150px">
+                    <div class="social-share-product">
+                        <ul class="example-2">
+                        <li class="icon-content">
+                            <a
+                            data-social="spotify"
+                            aria-label="Spotify"
+                            href="https://www.spotify.com/"
+                            >
+                            <div class="filled"></div>
+                            <svg width="64px" height="64px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>facebook [#ffffff]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="currentColor"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#ffffff]"> </path> </g> </g> </g> </g></svg>
+                            </a>
+                            <div class="tooltip">Facebook</div>
+                        </li>
+                        <li class="icon-content">
+                            <a
+                            data-social="pinterest"
+                            aria-label="Pinterest"
+                            href="https://www.pinterest.com/"
+                            >
+                            <div class="filled"></div>
+                            <svg xml:space="preserve" viewBox="0 0 100 100" version="1.1">
+                                <path
+                                fill="currentColor"
+                                d="M83,17.8C74.5,8.9,63.4,4.3,50,4.1C37.7,4.2,26.8,8.6,17.9,17.3C8.9,26,4.3,37,4.1,50c0,0,0,0,0,0c0,9.1,2.5,17.4,7.4,24.9  c4.9,7.4,11.6,13.2,20.1,17.1c0.3,0.1,0.7,0.1,1-0.1c0.3-0.2,0.5-0.5,0.5-0.8l0-4.9c0.1-2.1,0.7-5.3,1.7-9.5c1-4,1.7-6.7,1.9-7.6  c0.7-3,1.7-7.2,3-12.6c0.1-0.2,0-0.5-0.1-0.7c-0.4-0.8-1-2.6-1.5-6.6c0.1-2.7,0.8-5.2,2.1-7.3c1.2-2,3.1-3.1,5.7-3.5  c2,0.1,4.7,0.8,5.1,5.9c-0.1,1.8-0.8,4.5-1.9,8.1c-1.2,3.8-1.9,6.3-2.1,7.6c-0.7,2.5-0.2,4.8,1.5,6.8c1.6,1.9,3.8,2.9,6.5,3.1  c4.3-0.1,8.1-2.6,11.2-7.5c1.7-3,2.9-6.3,3.5-9.7c0.7-3.4,0.7-7.1,0-10.8c-0.7-3.8-2.2-7.1-4.5-9.8c0,0-0.1-0.1-0.1-0.1  c-4.3-3.7-9.5-5.3-15.6-5c-6,0.4-11.3,2.6-15.9,6.6c-2.9,3.2-4.8,7.1-5.7,11.6c-0.9,4.6,0,9.1,2.6,13.3c0.3,0.5,0.5,0.8,0.6,1  c0,0.3,0,1-0.5,2.8c-0.5,1.8-0.9,2.2-0.9,2.2c0,0-0.1,0-0.1,0.1c0,0-0.2,0-0.4-0.1c-2.2-1-3.9-2.4-5.2-4.2c-1.3-1.9-2.1-4-2.5-6.3  c-0.3-2.5-0.4-5-0.3-7.5c0.2-2.5,0.7-5.1,1.4-7.7c3-6.9,8.5-11.9,16.3-14.8c7.8-2.9,16-3.2,24.3-0.8c6.5,2.8,11,7.4,13.6,13.7  c2.5,6.4,2.8,13.4,0.8,20.8c-2.2,7.1-6.4,12.4-12.1,15.7c-5.6,2.8-10.8,3-15.7,0.7c-1.8-1.1-3.1-2.3-3.9-3.5c-0.2-0.3-0.6-0.5-1-0.5  c-0.4,0.1-0.7,0.3-0.8,0.7c-0.7,2.7-1.3,4.7-1.6,6.2c-1.4,5.4-2.6,9.2-3.4,11c-0.8,1.6-1.6,3.1-2.4,4.3c-0.2,0.3-0.2,0.6-0.1,0.9  s0.3,0.5,0.6,0.6c4.3,1.3,8.7,2,13,2c12.4-0.1,23.2-4.6,32.1-13.4C91.1,73.9,95.8,62.9,96,50C95.9,37.5,91.5,26.7,83,17.8z"
+                                ></path>
+                            </svg>
+                            </a>
+                            <div class="tooltip">Pinterest</div>
+                        </li>
+                        <li class="icon-content">
+                            <a
+                            data-social="dribbble"
+                            aria-label="Dribbble"
+                            href="https://dribbble.com/"
+                            >
+                            <div class="filled"></div>
+                            <svg width="64px" height="64px" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>twitter [#154]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)" fill="currentColor"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705" id="twitter-[#154]"> </path> </g> </g> </g> </g></svg>
+                            </a>
+                            <div class="tooltip">Twitter</div>
+                        </li>
+                        <li class="icon-content">
+                            <a
+                            data-social="telegram"
+                            aria-label="Telegram"
+                            href="https://telegram.org/"
+                            >
+                            <div class="filled"></div>
+                            <svg viewBox="0 0 100 100" version="1.1">
+                                <path
+                                fill="currentColor"
+                                d="M95,9.9c-1.3-1.1-3.4-1.2-7-0.1c0,0,0,0,0,0c-2.5,0.8-24.7,9.2-44.3,17.3c-17.6,7.3-31.9,13.7-33.6,14.5  c-1.9,0.6-6,2.4-6.2,5.2c-0.1,1.8,1.4,3.4,4.3,4.7c3.1,1.6,16.8,6.2,19.7,7.1c1,3.4,6.9,23.3,7.2,24.5c0.4,1.8,1.6,2.8,2.2,3.2  c0.1,0.1,0.3,0.3,0.5,0.4c0.3,0.2,0.7,0.3,1.2,0.3c0.7,0,1.5-0.3,2.2-0.8c3.7-3,10.1-9.7,11.9-11.6c7.9,6.2,16.5,13.1,17.3,13.9  c0,0,0.1,0.1,0.1,0.1c1.9,1.6,3.9,2.5,5.7,2.5c0.6,0,1.2-0.1,1.8-0.3c2.1-0.7,3.6-2.7,4.1-5.4c0-0.1,0.1-0.5,0.3-1.2  c3.4-14.8,6.1-27.8,8.3-38.7c2.1-10.7,3.8-21.2,4.8-26.8c0.2-1.4,0.4-2.5,0.5-3.2C96.3,13.5,96.5,11.2,95,9.9z M30,58.3l47.7-31.6  c0.1-0.1,0.3-0.2,0.4-0.3c0,0,0,0,0,0c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2-0.1c-0.1,0.1-0.2,0.4-0.4,0.6L66,38.1  c-8.4,7.7-19.4,17.8-26.7,24.4c0,0,0,0,0,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0.1,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1  c0,0,0,0,0,0.1c-0.5,5.6-1.4,15.2-1.8,19.5c0,0,0,0,0-0.1C36.8,81.4,31.2,62.3,30,58.3z"
+                                ></path>
+                            </svg>
+                            </a>
+                            <div class="tooltip">Telegram</div>
+                        </li>
+                        </ul>
+    
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script src="/frontend/js/script.js"></script>
