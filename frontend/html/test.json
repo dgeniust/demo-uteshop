@@ -1,0 +1,22 @@
+
+[
+    {
+        "orderId": 1,
+        "orderPrice": 5000,
+        "orderCount": 2,
+        "orderStatus": 2,
+        "user": {
+          "userId": 101,
+          "userName": "John Doe",
+          "email": "john.doe@example.com"
+        },
+        "product": {
+          "productId": 202,
+          "productName": "Future Sneakers",
+          "productPrice": 2500,
+          "productDescription": "High-quality sneakers for everyday use.",
+          "productCategory": "Footwear"
+        }
+      }
+      
+]

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/frontend/img/logo.png">
+    <!-- Link css -->
+    <link rel="stylesheet" href="/frontend/css/edit-profile.css">
+    <!-- Font AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gundam Garden</title>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="" class="brand">
+            <i class="bx bxs-smile"></i>
+            <span class="text">Profile</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="">
+                    <i class="bx bxs-dashboard"></i>
+                    <span class="text">Infomation</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">
+                        Purchase History</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bxs-chat' ></i>
+                    <span class="text">Message</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bxs-cog' ></i>
+                    <span class="text">Setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-log-in' ></i>
+                    <span class="text">Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<div class="right-nav-header">
+                <a href="#" class="notification">
+                    <i class='bx bxs-bell' ></i>
+                    <span class="num">8</span>
+                </a>
+                <a href="#" class="profile">
+                    <img src="img/people.png">
+                </a>
+            </div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+        <main>
+            <div class="head-title">
+				<div class="left">
+					<h1>Profile</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Infomation</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+            <div class="form-edit-profile">
+                <form action="edit" class="edit-profile" method="POST">
+                    <div class="left-form">
+                        <div class="info-user">
+                            <span>Họ Tên</span>
+                            <input type="text" placeholder="VD: Nguyễn Văn A" name="fullname" required>
+                        </div>
+                        <div class="info-user">
+                            <span>Username</span>
+                            <input type="text" placeholder="Nhập giới tính của bạn" name="username" required>
+                        </div>
+                        <div class="info-user">
+                            <span>Địa chỉ</span>
+                            <input type="text" placeholder="Nhập địa chỉ của bạn" name="address" required>
+                        </div>
+                        <div class="info-user">
+                            <span>Điện thoại</span>
+                            <input type="text" placeholder="Nhập số điện thoại của bạn" name="phone" required>
+                        </div>
+                        <div class="info-user">
+                            <span>Email</span>
+                            <input type="email" placeholder="example@gmail.com" name="fullname" required>
+                        </div>
+                        <div class="info-user">
+                            <span>Password</span>
+                            <input type="password" name="password" required>
+                        </div>
+                        <div class="btn-confirm-info">
+                            <input type="submit" value="Submit">
+                            <input type="submit" value="Change Password" id="btn-changepassword">
+                        </div>
+                    </div>
+                    <div class="right-form">
+                        <div class="upload-container">
+                            <label for="image-upload" class="upload-label">
+                                <span>Upload Image</span>
+                                <input type="file" id="image-upload" name="Images" accept="image/*">
+                            </label>
+                            <div class="preview-container">
+                                <img id="image-preview" src="" alt="Image preview" class="hidden">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <div id="myModal-changepassword" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close-changepassword">&times;</span>
+            <div class="left">
+                <div class="left-modal">
+                    <h2>Đổi password</h2>
+                    <form action="" class="form-fill-info" method="POST">
+                        <div class="info-product">
+                            <span>Password mới</span>
+                            <input type="text" name="password" required>
+                        </div>
+                        <div class="info-product">
+                            <span>Nhập lại password mới</span>
+                            <input type="text" name="password2" required>
+                        </div>
+                        <div class="btn-confirm-info">
+                            <input type="submit" value="Change password">
+                        </div>
+                    </form>
+                </div>
+                <div class="right-modal">
+                    <p>Mật khẩu phải từ 8-20 kí tự (chữ cái thường, hoa, số, kí tự đặc biệt)!</p>
+                    <p>VD: Dat@1234</p>
+                </div>
+            </div>
+        </div>
+		
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+    <script>
+
+        document.getElementById("image-upload").addEventListener("change", function (event) {
+            const file = event.target.files[0];
+            const preview = document.getElementById("image-preview");
+        
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.classList.remove("hidden");
+                };
+                reader.readAsDataURL(file);
+            } else {
+                preview.classList.add("hidden");
+            }
+        });
+
+        const allSlideMenu = document.querySelectorAll('#sidebar .side-menu.top li a')
+        allSlideMenu.forEach(item => {
+            const li = item.parentElement;
+            item.addEventListener('click', () => {
+                allSlideMenu.forEach(item => {
+                    item.parentElement.classList.remove('active')
+                })
+                li.classList.add('active')
+            })
+        })
+
+        // TOGGLE SIDEBAR
+        const menuBar = document.querySelector('#content nav .bx.bx-menu');
+        const sidebar = document.getElementById('sidebar');
+
+        menuBar.addEventListener('click', function () {
+            sidebar.classList.toggle('hide');
+        })
+
+
+        // Get the modal
+        var modal_changepassword = document.getElementById("myModal-changepassword");
+
+
+        // Get the button that opens the modal
+        var btn_changepassword = document.getElementById("btn-changepassword");
+
+
+        // Get the <span> element that closes the modal
+        var span_changepassword = document.getElementsByClassName("close-changepassword")[0];
+
+
+        // When the user clicks the button, open the modal 
+        btn_changepassword.onclick = function() {
+            modal_changepassword.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_changepassword.onclick = function() {
+            modal_changepassword.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal_add) {
+                modal_add.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<mapping path="/*" decorator="homedeco.jsp"/>
+	<mapping path="/login" exclude="true" />
+	<mapping path="/register" exclude="true" />
+	<mapping path="/editprofile" exclude="true" />
+	<mapping path="/preparepayment" exclude="true" />
+	<mapping path="/payment/check" exclude="true" />
+	
+	<mapping path="/api/*" exclude="true" />
+	<mapping path="/admin/*" exclude="true" />
+</sitemesh>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <filter>
+    <filter-name>sitemesh</filter-name>
+    <filter-class>org.sitemesh.config.ConfigurableSiteMeshFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>sitemesh</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <display-name>Web login</display-name>
+  <welcome-file-list>
+    <welcome-file>views/redirect.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <filter-name>JwtAuthorize</filter-name>
+    <filter-class>me.trihung.jwt.JwtAuthorize</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>JwtAuthorize</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>jspg</servlet-name>
+    <servlet-class>org.apache.jasper.servlet.JspServlet</servlet-class>
+    <init-param>
+      <param-name>mappedfile</param-name>
+      <param-value>false</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>ProductManagerController</display-name>
+    <servlet-name>ProductManagerController</servlet-name>
+    <servlet-class>me.trihung.controller.admin.ProductManagerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductManagerController</servlet-name>
+    <url-pattern>/ProductManagerController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditProfileController</display-name>
+    <servlet-name>EditProfileController</servlet-name>
+    <servlet-class>me.trihung.controller.EditProfileController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditProfileController</servlet-name>
+    <url-pattern>/EditProfileController</url-pattern>
+  </servlet-mapping>
+</web-app>
